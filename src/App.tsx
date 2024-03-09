@@ -1,6 +1,7 @@
 import { Copyright } from './components/Copyright';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
+import { Navbar } from './components/NavBar';
 import { Todos } from './components/Todos';
 import { useTodos } from './hooks/useTodos';
 
@@ -20,6 +21,7 @@ const App: React.FC = () => {
 
   return (
     <>
+        <Navbar />
       <div className="todoapp">
         <Header saveTodo={handleSave} />
         <Todos
